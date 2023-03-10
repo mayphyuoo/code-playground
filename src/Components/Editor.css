@@ -1,9 +1,13 @@
 #row{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 0;
-    height: 414px;
-    width: 100%;
+    height: fit-content;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.label{
+    margin-top: 5px;
 }
 
 textarea {
@@ -11,6 +15,7 @@ textarea {
     height: 400px;
     padding-top: 10px;
     background-color: #242424;
+    border: 5px solid #A7727D;
     color: white;
 }
 

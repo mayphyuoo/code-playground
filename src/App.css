@@ -1,31 +1,45 @@
-.App {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  .playground {
-  }
+html {
+	background-color: #f9f5e7;
+}
 
-  .output{
-    display: block;
-  }
-  
-  #runBtn {
-    padding: 4px 8px;
-    width: 120px;
-    font-size: 16px;
-    font-weight: 400;
-    align-self: center;
-    color: white;
-    background-color: green;
-  }
-  
-  @media only screen and (max-width: 1300px) {
-    .playground {
-      display: block;
-    }
-  }
+.inline{
+    display: inline;
+}
 
-  
+.header{
+    margin: 10px 5px;
+}
+
+.header p {
+    margin-left: 20px;
+}
+
+.output {
+	display: block;
+}
+
+.button-area {
+	text-align: center;
+    padding: 2em;
+    position: sticky;
+    bottom: 0;
+}
+
+.button {
+	padding: 5px 8px;
+	width: 120px;
+	font-size: 16px;
+	font-weight: 400;
+	color: white;
+	background-color: #a7727d;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+	.playground {
+		display: block;
+	}
+}

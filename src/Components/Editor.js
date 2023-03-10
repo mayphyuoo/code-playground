@@ -5,11 +5,20 @@ class MyTabs extends Component {
     render() {
       return (
         <div id="row">
-            <textarea id="htmlTextarea"></textarea>
-
-            <textarea id="cssTextarea"></textarea>
-
-            <textarea id="jsTextarea"></textarea>
+            <div>
+                <p className="label">HTML</p>
+                <textarea id="htmlTextarea"></textarea>
+            </div>
+            
+            <div>
+                <p className="label">CSS</p>
+                <textarea id="cssTextarea"></textarea>
+            </div>
+            
+            <div>
+                <p className="label">JS</p>
+                <textarea id="jsTextarea"></textarea>
+            </div>  
         </div>
 
       );
