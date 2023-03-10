@@ -37,7 +37,7 @@ class Output extends Component {
 
   render() {
     return (
-      <div>
+      <div className="output">
         <iframe id="iFrame" title="Output"></iframe>
       </div>
     );

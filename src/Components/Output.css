@@ -1,10 +1,17 @@
 iframe {
     width: 100%;
-    height:400px;
+    height:500px;
+    background-color: white;
 }
 
-@media only screen and (max-width: 1300px) {
+.output{
+    margin-top: 20px;
+}
 
+@media only screen and (max-width: 768px) {
+    .output{
+        text-align: center;
+    }
     iframe {
         width: 90%;
     }

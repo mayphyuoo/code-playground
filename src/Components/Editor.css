@@ -1,13 +1,45 @@
 #row{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: fit-content;
     margin-left: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 5px; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 1.125rem;
 }
 
+#row > div {
+    flex-grow: 1; 
+    width: calc(33% - 4px);
+    margin: 2px;
+    height: fit-content; 
+}
+
+@media ( max-width: 768px) {
+    #row {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    #row > div{
+        text-align: center;
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+    textarea{
+        width: 100%;
+    }
+  }
+
 .label{
+    display: inline-block;
     margin-top: 5px;
+    width: calc(33% - 4px);
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 
 textarea {

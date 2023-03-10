@@ -6,11 +6,29 @@ import Output from "./Components/Output";
 function App() {
 	return (
 		<div className="App">
-            <div className="header">
-                <h1 class="inline">HTML, CSS, JS playground</h1>
-                <p class="inline">made with ❤️ by <a target="_blank" href="https://github.com/mayphyuoo" rel="noreferrer">May</a></p>
-            </div>
-        
+			<nav class="navbar">
+				<div class="logo">Code playground</div>
+				
+				<ul class="nav-links">
+					
+					<input type="checkbox" id="checkbox_toggle" />
+					
+					<label for="checkbox_toggle" class="hamburger">
+						&#9776;
+					</label>
+					
+					<div class="menu">
+						
+						<li>Made with ❤️ by May</li>
+						
+						<li>
+							<a href="https://github.com/mayphyuoo" target="_blank" rel="noreferrer">Repo <i class="uil uil-github-alt social-icon"></i></a>
+						</li>
+
+					</div>
+				</ul>
+			</nav>
+
 			<div>
 				<Editor />
 

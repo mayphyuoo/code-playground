@@ -1,17 +1,24 @@
 html {
 	background-color: #f9f5e7;
+	background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
 }
 
-.inline{
-    display: inline;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.header{
-    margin: 10px 5px;
+a {
+	text-decoration: none;
 }
 
-.header p {
-    margin-left: 20px;
+li {
+	list-style: none;
+}
+
+.inline {
+	display: inline;
 }
 
 .output {
@@ -20,9 +27,9 @@ html {
 
 .button-area {
 	text-align: center;
-    padding: 2em;
-    position: sticky;
-    bottom: 0;
+	padding: 2em;
+	position: sticky;
+	bottom: 0;
 }
 
 .button {
@@ -43,3 +50,98 @@ html {
 		display: block;
 	}
 }
+
+/***************** NAVBAR ************************/
+
+.navbar {
+	display: flex;
+	align-items: center;
+    position: sticky;
+    top: 0;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: #a7727d;
+	color: #fff;
+}
+
+.nav-links a {
+	color: #fff;
+}
+
+/* LOGO */
+
+.logo {
+	font-size: 1.8rem;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+/* NAVBAR MENU */
+
+.menu {
+	display: flex;
+	gap: 1em;
+	font-size: 1.125rem;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.social-icon {
+    font-size: 1.25rem;
+}
+
+.menu li {
+	padding: 5px 14px;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+
+/* CHECKBOX HACK */
+
+input[type="checkbox"] {
+	display: none;
+}
+
+/*HAMBURGER MENU*/
+
+.hamburger {
+	display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+
+@media (max-width: 768px) {
+	.menu {
+		display: none;
+        position: absolute;
+        background-color: #a7727d;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+	}
+
+	input[type="checkbox"]:checked ~ .menu {
+		display: block;
+	}
+
+	.hamburger {
+		display: block;
+	}
+}
+
+/************** SCROLL BAR **************/
+::-webkit-scrollbar{
+    width: 0.8rem;
+    background-color: #c9baa8;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background-color: #F9F5E7;
+    border-radius: 0.5rem;
+  }
+
+  ::-webkit-scrollbar-thumb:hover{
+    background-color: #F9F5E7;
+    border-radius: 0.5rem;
+  }
