@@ -1,0 +1,22 @@
+#row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    height: 414px;
+    width: 100%;
+}
+
+textarea {
+    width: 600px;
+    height: 400px;
+    padding-top: 10px;
+    background-color: #242424;
+    color: white;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    textarea {
+        width: 90%;
+    }
+  }
