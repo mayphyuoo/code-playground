@@ -22,7 +22,7 @@ function App() {
 						<li>Made with ❤️ by May</li>
 						
 						<li>
-							<a href="https://github.com/mayphyuoo" target="_blank" rel="noreferrer">Repo <i class="uil uil-github-alt social-icon"></i></a>
+							<a href="https://github.com/mayphyuoo/code-playground" target="_blank" rel="noreferrer">Repo <i class="uil uil-github-alt social-icon"></i></a>
 						</li>
 
 					</div>

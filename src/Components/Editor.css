@@ -49,6 +49,7 @@ textarea {
     background-color: #242424;
     border: 5px solid #A7727D;
     color: white;
+    font-family: 'Roboto Mono', sans-serif;
 }
 
 @media only screen and (max-width: 1300px) {
